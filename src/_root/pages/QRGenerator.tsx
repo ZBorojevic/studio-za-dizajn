@@ -5,7 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import Loader from "@/components/shared/Loader";
 import { Button } from '@/components/ui/button';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 
 const QRCodeValidation = z.object({
@@ -25,7 +25,7 @@ const QRGenerator = () => {
         },
     });
 
-    const generateQRCode = async (values) => {
+    const generateQRCode = async (values: any) => {
         setIsLoading(true);
         try {
             // Generate PNG for display

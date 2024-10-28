@@ -19,7 +19,7 @@ const BarcodeValidation = z.object({
 });
 
 // Funkcija za provjeru kontrolne cifre EAN-13 koda
-function validateEAN13(ean13) {
+function validateEAN13(ean13: string) {
     const sum = ean13
         .slice(0, -1)
         .split('')
@@ -41,7 +41,7 @@ const BarcodeGenerator = () => {
         },
     });
 
-    const generateBarcode = async (values) => {
+    const generateBarcode = async (values: any) => {
         setIsLoading(true);
         try {
             // Ispravljeni namespace za SVG
