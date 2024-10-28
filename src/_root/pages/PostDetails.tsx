@@ -25,7 +25,7 @@ const PostDetails = () => {
           variant="ghost"
           className="shad-button_ghost"
         >
-          <img src={"/assets/icons/back.svg"} alt="back" width={24} height={24} />
+          <img src={"public/assets/icons/back.svg"} alt="back" width={24} height={24} />
           <p className="small-medium lg:base-medium">Natrag</p>
         </Button>
       </div>
@@ -39,7 +39,7 @@ const PostDetails = () => {
             <div className="flex-between w-full">
               <Link to={`/profile/${post.creator?.$id}`} className="flex items-center gap-3">
                 <img
-                  src={post.creator?.imageUrl || '/assets/icons/profile-placeholder.svg'}
+                  src={post.creator?.imageUrl || 'public/assets/icons/profile-placeholder.svg'}
                   alt="creator"
                   className="rounded-full w-8 h-8 lg:w-12 lg:h-12"
                 />
@@ -61,14 +61,14 @@ const PostDetails = () => {
                   to={`/update-post/${post.$id}`}
                   className={`${user.id !== post.creator?.$id && 'hidden'}`}
                 >
-                  <img src="/assets/icons/edit.svg" alt="edit" width={24} height={24} />
+                  <img src="public/assets/icons/edit.svg" alt="edit" width={24} height={24} />
                 </Link>
                 <Button
                   onClick={handleDeletePost}
                   variant="ghost"
                   className={`ghost_details-delete_btn ${user.id !== post.creator?.$id && 'hidden'}`}
                 >
-                  <img src="/assets/icons/delete.svg" alt="delete" width={24} height={24} />
+                  <img src="public/assets/icons/delete.svg" alt="delete" width={24} height={24} />
                 </Button>
               </div>
             </div>

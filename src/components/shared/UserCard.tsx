@@ -11,7 +11,7 @@ const UserCard = ({ user }: UserCardProps) => {
   return (
     <Link to={`/profile/${user.$id}`} className="user-card">
       <img
-        src={user.imageUrl || "/assets/icons/profile-placeholder.svg"}
+        src={user.imageUrl || "public/assets/icons/profile-placeholder.svg"}
         alt="profilna slika"
         className="rounded-full w-14 h-14"
       />

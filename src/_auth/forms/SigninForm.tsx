@@ -51,7 +51,7 @@ const SigninForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
-        <img src="/assets/images/szd_logo_white.png" alt="Studio za dizajn logo" width={64} />
+        <img src="public/assets/images/szd_logo_white.png" alt="Studio za dizajn logo" width={64} />
         <h2 className="h3-bold md:h2-bold pt-5 sm:pt-6">Prijava na račun.</h2>
         <p className="text-light-3 small-medium md:base-regular">Dobrodošli. Molim unesite svoje korisničko ime i password.</p>
         
