@@ -136,7 +136,7 @@ const SignupForm = () => {
           </Button>
           <p className="text-small-regular text-light-2 text-center mt-2">
             Već imaš korisnički račun? 
-            <Link to="/sign-in" className="text-light-1 text-small-medium ml-1">Prijavi se</Link>
+            <Link to="/sign-in" className="text-light-1 text-small-medium ml-1">Prijavi se.</Link>
           </p>
         </form>
       </div>
