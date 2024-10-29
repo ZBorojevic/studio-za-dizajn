@@ -35,7 +35,7 @@ const GridPostList = ({
                 <img
                   src={
                     post.creator.imageUrl ||
-                    "public/assets/icons/profile-placeholder.svg"
+                    "https://zoranborojevic.com/podravka/assets/icons/profile-placeholder.svg"
                   }
                   alt="creator"
                   className="w-8 h-8 rounded-full"

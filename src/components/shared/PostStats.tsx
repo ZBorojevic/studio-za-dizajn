@@ -78,8 +78,8 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
         <img
           src={`${
             checkIsLiked(likes, userId)
-              ? "public/assets/icons/liked.svg"
-              : "public/assets/icons/like.svg"
+              ? "https://zoranborojevic.com/podravka/assets/icons/liked.svg"
+              : "https://zoranborojevic.com/podravka/assets/icons/like.svg"
           }`}
           alt="like"
           width={20}
@@ -92,7 +92,7 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
 
       <div className="flex gap-2">
         <img
-          src={isSaved ? "public/assets/icons/saved.svg" : "public/assets/icons/save.svg"}
+          src={isSaved ? "https://zoranborojevic.com/podravka/assets/icons/saved.svg" : "https://zoranborojevic.com/podravka/assets/icons/save.svg"}
           alt="share"
           width={20}
           height={20}

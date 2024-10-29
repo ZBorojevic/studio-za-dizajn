@@ -18,7 +18,7 @@ const Topbar = () => {
       <div className="flex-between py-4 px-5">
         <Link to="/" className="flex gap-3 items-center">
           <img
-            src="public/assets/images/szd_logo_white.png"
+            src="https://zoranborojevic.com/podravka/assets/images/szd_logo_white.png"
             alt="Studio za dizajn logo"
             width={50} 
           />
@@ -29,11 +29,11 @@ const Topbar = () => {
             variant="ghost"
             className="shad-button"
             onClick={() => signOut()}>
-            <img src="public/assets/icons/logout.svg" alt="logout" width={18} />
+            <img src="https://zoranborojevic.com/podravka/assets/icons/logout.svg" alt="logout" width={18} />
           </Button>
           <Link to={`/profile/${user.id}`} className="flex-center gap-3">
             <img
-              src={user.imageUrl || "public/assets/icons/profile-placeholder.svg"}
+              src={user.imageUrl || "https://zoranborojevic.com/podravka/assets/icons/profile-placeholder.svg"}
               alt="profile"
               className="h-8 w-8 rounded-full"
             />

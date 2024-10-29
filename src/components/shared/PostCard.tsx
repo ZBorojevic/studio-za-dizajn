@@ -21,7 +21,7 @@ const PostCard = ({ post }: PostCardProps) => {
             <img
               src={
                 post.creator?.imageUrl ||
-                "public/assets/icons/profile-placeholder.svg"
+                "https://zoranborojevic.com/podravka/assets/icons/profile-placeholder.svg"
               }
               alt="creator"
               className="rounded-full w-12 lg:h-12"
@@ -45,7 +45,7 @@ const PostCard = ({ post }: PostCardProps) => {
         <Link
           to={`/update-post/${post.$id}`}
           className={`${user.id !== post.creator.$id && "hidden"}`}>
-          <img src="public/assets/icons/edit.svg" alt="edit" width={20} height={20} />
+          <img src="https://zoranborojevic.com/podravka/assets/icons/edit.svg" alt="edit" width={20} height={20} />
         </Link>
       </div>
 
@@ -54,7 +54,7 @@ const PostCard = ({ post }: PostCardProps) => {
           <p>{post.caption}</p>
         </div>
         <img
-          src={post.imageUrl || "public/assets/icons/profile-placeholder.svg"}
+          src={post.imageUrl || "https://zoranborojevic.com/podravka/assets/icons/profile-placeholder.svg"}
           alt="post image"
           className="post-card_img"
         />
